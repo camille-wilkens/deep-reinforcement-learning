@@ -41,7 +41,7 @@ To set up your python environment to run the code in this repository , follow th
 	- Next, install the **classic control** environment group by following the instructions [here](https://github.com/openai/gym#classic-control).
 	- Then, install the **box2d** environment group by following the instructions [here](https://github.com/openai/gym#box2d).
 	
-3. Clone the repository (if you haven't already!), and navigate to the `python/` folder.  Then, install several dependencies.
+3. Clone the DRLND GitHub repository (if you haven't already!), and navigate to the `python/` folder.  Then, install several dependencies.
 ```bash
 git clone https://github.com/udacity/deep-reinforcement-learning.git
 cd deep-reinforcement-learning/python
@@ -55,7 +55,6 @@ python -m ipykernel install --user --name drlnd --display-name "drlnd"
 
 5. Before running code in a notebook, change the kernel to match the `drlnd` environment by using the drop-down `Kernel` menu. 
 
-![Kernel][image2]
 
 6. Download the environment from one of the links below.  You need only select the environment that matches your operating system:
     - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
@@ -71,7 +70,7 @@ python -m ipykernel install --user --name drlnd --display-name "drlnd"
 
 ### Get Started
 
-Follow the instructions in `Navigation.ipynb` to start  
+Open 'Navigation.ipynb` in Jupyter Notebook to start and follow instructions.
 
 ### References
 https://github.com/udacity/deep-reinforcement-learning/README.md
