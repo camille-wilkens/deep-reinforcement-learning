@@ -74,5 +74,8 @@ python -m ipykernel install --user --name drlnd --display-name "drlnd"
 
 Follow the instructions in `Continuous_Control.ipynb` to get started with training your own agent!  
 
+### References
+https://github.com/udacity/deep-reinforcement-learning/README.md
+
 
 
