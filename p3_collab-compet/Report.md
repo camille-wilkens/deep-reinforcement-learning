@@ -7,7 +7,7 @@
 [image4]: https://github.com/camille-wilkens/deep-reinforcement-learning/blob/master/p3_collab-compet/graph.PNG "Plot"
 
 
-#### Project 3: Collaboration and Competition
+### Project 3: Collaboration and Competition
 
 ### Introduction
 
