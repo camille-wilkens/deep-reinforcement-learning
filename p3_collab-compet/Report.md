@@ -46,7 +46,8 @@ SIGMA=0.05 TAU = 1e-3     # for soft update of target parameters
 LR_ACTOR = 1e-3           # learning rate of the actor  
 LR_CRITIC = 1e-3          # learning rate of the critic 
 WEIGHT_DECAY = 0          # L2 weight decay 
-n_episodes=300       # of episodes 
+n_episodes=300            # of episodes 
+
  
 
 ### Plot of Rewards 
@@ -59,4 +60,5 @@ The areas of improvement would be to continue to tune the hyper parameters and a
  
 ### References 
 [1] https://pemami4911.github.io/blog/2016/08/21/ddpg-rl.html
+
 [2] https://arxiv.org/abs/1509.02971 
