@@ -19,7 +19,6 @@ In this environment, two agents control rackets to bounce a ball over a net. If 
 
 The observation space consists of 8 variables corresponding to the position and velocity of the ball and racket. Each agent receives its own, local observation.  Two continuous actions are available, corresponding to movement toward (or away from) the net, and jumping. 
 
-#### Solve Status
 The task is episodic, and in order to solve the environment, your agents must get an average score of +0.5 (over 100 consecutive episodes, after taking the maximum over both agents). Specifically,
 
 - After each episode, we add up the rewards that each agent received (without discounting), to get a score for each agent. This yields 2 (potentially different) scores. We then take the maximum of these 2 scores.
@@ -39,13 +38,21 @@ DDPG Algorithm The Deep Deterministic Policy Gradient (DDPG) is an actor-critic 
 The Actor’s model I used consisted of two hidden linear layers with 400 and 300 units.  The output layer used was tanh. The Critic’s model consisted of three hidden layers - 400, 300 & 100 units.  Each layer is fully connected with RELU activations with an output layer consisting of 1.   Batch normalization was applied on both the Critic’s & Actor’s model. 
 
 The hyperparameters that were used in the model consisted of: 
+
 BUFFER_SIZE = int(1e9)    # replay buffer size 
+
 BATCH_SIZE = 1024         # minibatch size 
+
 GAMMA = 0.99              # discount factor 
+
 SIGMA=0.05 TAU = 1e-3     # for soft update of target parameters 
+
 LR_ACTOR = 1e-3           # learning rate of the actor  
+
 LR_CRITIC = 1e-3          # learning rate of the critic 
+
 WEIGHT_DECAY = 0          # L2 weight decay 
+
 n_episodes=300            # of episodes 
 
  
