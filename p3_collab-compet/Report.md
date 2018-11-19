@@ -2,8 +2,8 @@
 
 [image1]: https://user-images.githubusercontent.com/10624937/42135623-e770e354-7d12-11e8-998d-29fc74429ca2.gif "Trained Agent"
 [image2]: https://user-images.githubusercontent.com/10624937/42135622-e55fb586-7d12-11e8-8a54-3c31da15a90a.gif "Soccer"
-[image3]: https://github.com/camille-wilkens/deep-reinforcement-learning/tree/master/p3_collab-compet "DDPG"
-[image4]: https://github.com/camille-wilkens/deep-reinforcement-learning/tree/master/p3_collab-compet "Plot"
+[image3]: https://github.com/camille-wilkens/deep-reinforcement-learning/tree/master/p3_collab-compet/ddpg.PNG "DDPG"
+[image4]: https://github.com/camille-wilkens/deep-reinforcement-learning/tree/master/p3_collab-compet/graph.PNG "Plot"
 
 
 #Project 3: Collaboration and Competition
@@ -31,10 +31,12 @@ The environment is considered solved, when the average (over 100 episodes) of th
 
 DDPG Algorithm The Deep Deterministic Policy Gradient (DDPG) is an actor-critic algorithm.   The input of the actor network is the current state, and the output is a single real value representing an action chosen from a continuous action space. The critic’s value model output is the estimated Q-value of the current state and of the action given by the actor. The deterministic policy gradient theorem provides the update rule for the weights of the actor network [1] & [2].  
 
+![DDPG][image3]
 
 ### DDPG Model 
  
 The Actor’s model I used consisted of two hidden linear layers with 400 and 300 units.  The output layer used was tanh. The Critic’s model consisted of three hidden layers - 400, 300 & 100 units.  Each layer is fully connected with RELU activations with an output layer consisting of 1.   Batch normalization was applied on both the Critic’s & Actor’s model. 
+
 The hyperparameters that were used in the model consisted of: 
 BUFFER_SIZE = int(1e9)    # replay buffer size 
 BATCH_SIZE = 1024         # minibatch size 
@@ -47,8 +49,8 @@ n_episodes=300       # of episodes
  
 
 ### Plot of Rewards 
-The DDPG algorithm achieved an average score of 30.03 in 295 episodes as seen below: 
-
+The DDPG algorithm achieved an average score of .5077 in 878 episodes as seen below: 
+![Plot][image4]
 
 ### Improvements 
  
